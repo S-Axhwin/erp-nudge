@@ -186,29 +186,29 @@ const Upload = () => {
               const normalizedKeys = keys.map(key => key.toLowerCase().replace(/\s+/g, ''));
               
               // Find the best matching keys
-              const poNumberKey = keys.find((key, index) => 
+              const poNumberKey = keys.find((_, index) => 
                 normalizedKeys[index] === 'ponumber' || 
                 (normalizedKeys[index].includes('po') && normalizedKeys[index].includes('number'))
               ) || keys[0];
               
-              const vendorNameKey = keys.find((key, index) => 
+              const vendorNameKey = keys.find((_, index) => 
                 normalizedKeys[index] === 'vendorname' || 
                 normalizedKeys[index].includes('vendor')
               ) || keys[1];
               
-              const orderedQtyKey = keys.find((key, index) => 
+              const orderedQtyKey = keys.find((_, index) => 
                 normalizedKeys[index] === 'orderedqty' || 
                 (normalizedKeys[index].includes('ordered') && 
                  (normalizedKeys[index].includes('qty') || normalizedKeys[index].includes('quantity')))
               ) || keys[2];
               
-              const receivedQtyKey = keys.find((key, index) => 
+              const receivedQtyKey = keys.find((_, index) => 
                 normalizedKeys[index] === 'receivedqty' || 
                 (normalizedKeys[index].includes('received') && 
                  (normalizedKeys[index].includes('qty') || normalizedKeys[index].includes('quantity')))
               ) || keys[3];
               
-              const poAmountKey = keys.find((key, index) => 
+              const poAmountKey = keys.find((_, index) => 
                 normalizedKeys[index] === 'poamount' || 
                 normalizedKeys[index].includes('amount') || 
                 normalizedKeys[index].includes('value')

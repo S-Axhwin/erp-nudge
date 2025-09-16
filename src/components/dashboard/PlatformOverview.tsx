@@ -6,7 +6,7 @@ import { FillRate, SumOfBilling, TotalOrders } from '@/lib/calculation';
 
 
 export default function PlatformOverview() {
-  
+  // @ts-ignore
   function formatIndianNumber(num) {
   let value, unit;
 

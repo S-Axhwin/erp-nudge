@@ -3,7 +3,7 @@ import HighlightCards from '@/components/dashboard/HighlightCards';
 import PlatformOverview from '@/components/dashboard/PlatformOverview';
 import { ChartBarHorizontal } from '@/charts/chart1';
 import { ChartBarDefault } from '@/charts/chart2';
-import { ChartRadialSimple } from '@/charts/chart3';
+
 
 export default function PlatformComparison() {
   return (

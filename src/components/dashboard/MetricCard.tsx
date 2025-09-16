@@ -23,7 +23,7 @@ export function MetricCard({
   subtitle, 
   trend, 
   icon, 
-  className = "",
+
   onClick,
   chartType
 }: MetricCardProps) {
