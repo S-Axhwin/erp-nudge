@@ -10,8 +10,8 @@ import { AppSidebar } from "./components/app-sidebar.tsx"
 import {BrowserRouter} from "react-router-dom"
 
 createRoot(document.getElementById('root')!).render(
-  <ThemeProvider defaultTheme='dark'>
-    <BrowserRouter basename="dealer">
+  <ThemeProvider defaultTheme='light'>
+    <BrowserRouter >
       <SidebarProvider
             style={
               {

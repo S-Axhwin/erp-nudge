@@ -1,7 +1,7 @@
 import * as React from "react"
 import {
   IconCamera,
-  IconChartBar,
+
   IconDashboard,
   IconDatabase,
   IconFileAi,
@@ -41,23 +41,28 @@ const data = {
   navMain: [
     {
       title: "Dashboard",
-      url: "#",
+      url: "/",
       icon: IconDashboard,
     },
     {
       title: "View PO's ",
-      url: "#",
+      url: "/pos",
       icon: IconListDetails,
     },
     {
-      title: "View GRN's",
-      url: "#",
-      icon: IconChartBar,
+      title: "View Open PO's ",
+      url: "/open-pos",
+      icon: IconListDetails,
     },
     {
       title: "Uploads Files",
-      url: "#",
+      url: "/upload",
       icon: IconFolder,
+    },
+    {
+      title: "Platform",
+      url: "/platform",
+      icon: IconDatabase,
     },
     {
       title: "AI Assistant",
@@ -74,7 +79,7 @@ const data = {
       items: [
         {
           title: "Active Proposals",
-          url: "#",
+          url: "/",
         },
         {
           title: "Archived",
@@ -116,7 +121,7 @@ const data = {
   navSecondary: [
     {
       title: "Settings",
-      url: "#",
+      url: "/",
       icon: IconSettings,
     },
     {
