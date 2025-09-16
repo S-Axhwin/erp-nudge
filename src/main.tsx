@@ -7,11 +7,11 @@ import './index.css'
 import App from './App.tsx'
 import { ThemeProvider } from './components/theme-provider.tsx'
 import { AppSidebar } from "./components/app-sidebar.tsx"
-import {BrowserRouter} from "react-router-dom"
+import { HashRouter} from "react-router-dom"
 
 createRoot(document.getElementById('root')!).render(
   <ThemeProvider defaultTheme='light'>
-    <BrowserRouter >
+    <HashRouter >
       <SidebarProvider
             style={
               {
@@ -25,6 +25,6 @@ createRoot(document.getElementById('root')!).render(
               <App/>
             </SidebarInset>
       </SidebarProvider>
-    </BrowserRouter>
+    </HashRouter>
   </ThemeProvider>,
 )
